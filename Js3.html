@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stuff</title>
+        <style>
+            #para{background-color: forestgreen;
+            color: navy;
+            padding: 5px;
+            border: solid whitesmoke;}
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">
+            hi
+        </h1>
+         <p>
+            hil
+        </p>
+        <p>
+            hi
+        </p>
+        <script>
+            let div=document.createElement('div');
+            div.id='para';
+            div.innerHTML="<p>Look around this text</p>";
+            document.body.append(div);
+
+            let heading=document.getElementById('heading');
+            heading.innerHTML="&#128512;";
+
+            document.querySelector('header p').innerHTML="<strong>Good Job</strong>";
+        </script>
+    </body>
+</html>
