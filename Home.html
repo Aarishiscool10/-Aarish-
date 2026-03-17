@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: lightslategray;
+            }
+            .topnav a{
+                float: left;
+                color: chartreuse;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover{
+                background-color: lightblue;
+                color: black;
+            }
+            .topnav a:active{
+                background-color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="Home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <p>This is a home page</p>
+
+        <section>
+            <img class="imager" src="https://www.diskbank.com.au/static/5d1bf6a5cc715c8faf32fb9e01fef3c9/620a9/iStock-185059345.jpg" alt="VHS1" height="200px">
+            <img class="imager" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/02/poppy-playtime-chapter-5-all-vhs-tape-locations.jpg?w=1600&h=1200&fit=crop" alt="VHS2" height="200px">
+            <img class="imager" src="https://i.ebayimg.com/images/g/hZQAAOSwFOddWBrl/s-l1200.jpg" alt="VRC1" height="200px">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("imager");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+        </script>
+    </body>
+</html>
