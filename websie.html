@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+><html>
+    <head>
+    <title>
+        e
+    </title>
+    <style>
+          .topnav{
+                overflow: hidden;
+                background-color: lightcyan;
+            }
+            .topnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover{
+                background-color: lightblue;
+                color: black;
+            }
+            .topnav a:active{
+                background-color: cornflowerblue;
+            }
+            #e{
+                color: cadetblue;
+            }
+    </style>
+    </head>
+    <body>
+        
+           <h1 id="e"><img style="height: 200px; width: 400px;" src="https://thumbs.dreamstime.com/b/mouse-website-word-isolated-d-rendering-286324747.jpg">website</h1>
+
+          <div class="topnav">
+            <a href="HOME">HOME</a>
+            <a href="ABOUT">ABOUT</a>
+            <a href="GALLERY">GALLERY</a>
+            <a href="CONTACT">CONTACT</a>
+          </div>
+
+
+
+           <div id="r" style="width: 400px;">
+            <img class="im" src="https://tse1.mm.bing.net/th/id/OIP.wgO5F-hp6c_dWGVQJxAxVgHaHa?pid=Api&P=0&h=180" alt="1" height="200px">
+            <img class="im" src="https://tse1.mm.bing.net/th/id/OIP.UWbMHoOidQtcWyO00zQY0gHaFc?pid=Api&P=0&h=180" alt="2" height="200px">
+            <img class="im" src="https://tse2.mm.bing.net/th/id/OIP.uTjRKlkxd8QzIUFj_IQ4AAHaFm?pid=Api&P=0&h=180" alt="3" height="200px">
+        </div>
+
+
+
+
+
+
+        <script>
+             var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("im");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 50);
+        }
+        </script>
+    </body>
+</html>
