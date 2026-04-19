@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <p>THE LEGO CAROUSEL !!!!!!!</p>
+
+   </div>
+   <div id="r" style="width: 1000px; height: 1000px;"">
+            <img class="im" src="https://i.redd.it/cf0xgyvwsrsa1.jpg" alt="1" height="200px">
+            <img class="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCZ7XCw0sMNt0n4A_CkvPRm2EfGr_P2Tpdg&s" alt="2" height="200px">
+            <img class="im" src="https://i.redd.it/i-made-some-lego-star-wars-tcs-style-ninjago-profile-v0-k45wyymqd2x81.png?width=1000&format=png&auto=webp&s=48586e7464bee7e1ba6eca0fc16f440c9c145648" alt="3" height="200px">
+        </div>
+
+    <script>
+             var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("im");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1000);
+        }
+        </script>
+</body>
+</html>
